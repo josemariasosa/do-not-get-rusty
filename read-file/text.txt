@@ -1,0 +1,20 @@
+Problem Statement:
+
+You have to create a command line program in Rust that reads a text file and counts the number of words in the file. The program should also identify the five most frequently used words in the file and display their counts as well.
+
+Specifications:
+
+The program should accept a single command line argument, which is the path to the text file.
+If no argument is provided, or if the file cannot be read, the program should print an appropriate error message and exit.
+Words are defined as contiguous strings of alphabetic characters, case insensitive.
+You should handle punctuation correctly. For example, "word," "word." and "word" should all be considered the same word.
+The program should print the total number of words in the file.
+The program should print the five most frequently used words and their counts. If there are ties, it's up to you how to handle them.
+Hints:
+
+You might want to use the std::env::args() function to get the command line arguments.
+The std::fs::read_to_string() function can be used to read a file into a string.
+The str::split_whitespace() method can be used to split a string into words, but it won't handle punctuation. You might want to use a regular expression to handle this correctly.
+You might want to use a HashMap to keep track of word frequencies.
+The std::collections::BinaryHeap can be used to keep track of the five most frequent words.
+Good luck with the challenge! Remember, the most important thing is not to get it perfect on the first try, but to learn and improve your Rust skills.
